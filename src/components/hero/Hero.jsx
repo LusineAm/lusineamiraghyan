@@ -46,16 +46,10 @@ const Hero = () => {
               <span>{heroContent.heroDesignation}</span>
             </h1>
             <p className="open-sans-font">{heroContent.heroDescriptions}</p>
-            <button className="button" onClick={toggleModalOne}>
-              <span className="button-text">{heroContent.heroBtn}</span>
-              <span className="button-icon fa fa-arrow-right"></span>
-            </button>
+            <p className="open-sans-font">{heroContent.heroDescriptions}</p>
           </div>
         </div>
       </div>
-      {/* End home-details-container */}
-
-      {/* Start Modal for About More */}
       <Modal
         isOpen={isOpen}
         onRequestClose={toggleModalOne}
@@ -68,7 +62,6 @@ const Hero = () => {
           <button className="close-modal" onClick={toggleModalOne}>
             <img src={cancelImg} alt="close icon" />
           </button>
-          {/* End close icon */}
 
           <div className="box_inner about">
             <div data-aos="fade-up" data-aos-duration="1200">
@@ -78,14 +71,11 @@ const Hero = () => {
                 </h1>
                 <span className="title-bg">Resume</span>
               </div>
-              {/* End title */}
               <Index />
             </div>
           </div>
         </div>
-        {/* End modal box news */}
       </Modal>
-      {/* End  Modal for About More */}
     </>
   );
 };

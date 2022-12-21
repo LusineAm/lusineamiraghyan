@@ -1,20 +1,21 @@
-import React from "react";
-import Modal from "react-modal";
-import cancelImg from "../../assets/img/cancel.svg";
-import UseData from "../../Hooks/UseData";
-import blogQuote from "../../assets/img/blog/quote.svg";
+// import React from "react";
+// import Modal from "react-modal";
+// import cancelImg from "../../assets/img/cancel.svg";
+// import UseData from "../../Hooks/UseData";
+// import blogQuote from "../../assets/img/blog/quote.svg";
 
-Modal.setAppElement("#root");
+// Modal.setAppElement("#root");
 
 const Blog = () => {
-  const { singleData, isOpen, setIsOpen, blogsData, handleBlogsData } =
-    UseData();
-  const handleModle = (id) => {
-    handleBlogsData(id);
-  };
+//   const { singleData, isOpen, setIsOpen, blogsData, handleBlogsData } =
+//     UseData();
+//   const handleModle = (id) => {
+//     handleBlogsData(id);
+//   };
   return (
     <>
-      <div className="row">
+    <h3 style={{textAlign: "center", color: "red"}}>Maybe Later :)</h3>
+      {/* <div className="row">
         {blogsData.map((item) => (
           <div
             key={item.id}
@@ -29,7 +30,6 @@ const Blog = () => {
                   <img src={item?.img} className="img-fluid" alt="item.title" />
                 </div>
               </div>
-              {/* End .thumb */}
               <div className="post-content">
                 <div className="entry-header">
                   <h3>{item?.title}</h3>
@@ -38,10 +38,8 @@ const Blog = () => {
                   <p>{item?.description1.slice(0, 100)}</p>
                 </div>
               </div>
-              {/* End .post-content */}
             </article>
 
-            {/* Start ModalOneBlogContent */}
             <Modal
               isOpen={isOpen}
               onRequestClose={() => setIsOpen(false)}
@@ -57,10 +55,8 @@ const Blog = () => {
                 >
                   <img src={cancelImg} alt="close icon" />
                 </button>
-                {/* End close icon */}
 
                 <div className="box_inner blog-post">
-                  {/* Article Starts */}
                   <article>
                     <div className="title-section text-left text-sm-center">
                       <h1>
@@ -68,7 +64,6 @@ const Blog = () => {
                       </h1>
                       <span className="title-bg">posts</span>
                     </div>
-                    {/* Meta Starts */}
 
                     <div className="meta open-sans-font">
                       <span>
@@ -81,8 +76,6 @@ const Blog = () => {
                         <i className="fa fa-tags"></i> {singleData.tag}
                       </span>
                     </div>
-                    {/* Meta Ends */}
-                    {/* Article Content Starts */}
 
                     <h1>{singleData?.title}</h1>
                     <img
@@ -101,16 +94,13 @@ const Blog = () => {
                       <p>{singleData?.description3}</p>
                       <p>{singleData?.description4}</p>
                     </div>
-                    {/* Article Content Ends */}
                   </article>
-                  {/* Article Ends */}
                 </div>
               </div>
             </Modal>
-            {/* End  ModalOneBlogContent */}
           </div>
         ))}
-      </div>
+      </div> */}
     </>
   );
 };

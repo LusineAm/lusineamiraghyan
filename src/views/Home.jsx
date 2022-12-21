@@ -11,7 +11,6 @@ import SwitchDark from "../components/switch/SwitchDark";
 
 const menuItem = [
   { icon: "fa-home", menuName: "Home" },
-  { icon: "fa-user", menuName: "About" },
   { icon: "fa-briefcase", menuName: "Portfolio" },
   { icon: "fa-envelope-open", menuName: "Contact" },
   { icon: "fa-comments", menuName: "Blog" },
@@ -23,7 +22,6 @@ const Home = () => {
   return (
     <div className="yellow">
       <SwitchDark />
-      {/* End Switcher */}
       <Tabs>
         <div className="header">
           <TabList className=" icon-menu  revealator-slideup revealator-once revealator-delay1">
@@ -35,11 +33,18 @@ const Home = () => {
             ))}
           </TabList>
         </div>
-        {/* End Menu Content */}
-
         <div className="tab-panel_list">
-          {/* Hero Content Starts */}
           <TabPanel className="home ">
+            <div>
+              <div data-aos="fade-up" data-aos-duration="1200">
+                <div className="title-section text-left text-sm-center">
+                  <h1>
+                    WHAT ABOUT <span>ME ?</span>
+                  </h1>
+                  <span className="title-bg">Resume</span>
+                </div>
+              </div>
+            </div>
             <div
               className="container-fluid main-container container-home p-0 "
               data-aos="fade-up"
@@ -48,25 +53,16 @@ const Home = () => {
               <div className="color-block d-none d-lg-block"></div>
               <Hero />
             </div>
-          </TabPanel>
-          {/* Hero Content Ends */}
+            
+            <hr className="separator mt-5 mb-5" />
 
-          {/* About Content Starts */}
-          <TabPanel className="about">
-            <div data-aos="fade-up" data-aos-duration="1200">
-              <div className="title-section text-left text-sm-center">
-                <h1>
-                  ABOUT <span>ME</span>
-                </h1>
-                <span className="title-bg">Resume</span>
+            <div className="about">
+              <div data-aos="fade-up" data-aos-duration="1200">
+                <Index />
               </div>
-              {/* End title */}
-              <Index />
             </div>
           </TabPanel>
-          {/* About Content Ends */}
 
-          {/* Portfolio Content Starts */}
           <TabPanel className="portfolio professional">
             <div
               className="title-section text-left text-sm-center"
@@ -78,12 +74,9 @@ const Home = () => {
               </h1>
               <span className="title-bg">works</span>
             </div>
-            {/* End title */}
             <Portfolio />
           </TabPanel>
-          {/* Portfolio Content Ends */}
 
-          {/* Contact Content Starts */}
           <TabPanel className="contact">
             <div
               className="title-section text-left text-sm-center"
@@ -101,7 +94,6 @@ const Home = () => {
               data-aos-duration="1200"
             >
               <div className="row">
-                {/*  Left Side Starts */}
                 <div className="col-12 col-lg-4">
                   <h3 className="text-uppercase custom-title mb-0 ft-wt-600 pb-3">
                     Don't be shy !
@@ -112,26 +104,18 @@ const Home = () => {
                     be part of your visions.
                   </p>
                   <Address />
-                  {/* End Address */}
 
                   <Social />
-                  {/* End Social */}
                 </div>
-                {/* Left Side Ends */}
 
-                {/*  Contact Form Starts  */}
                 <div className="col-12 col-lg-8">
                   <Contact />
                 </div>
-                {/*  Contact Form Ends */}
               </div>
             </div>
-            {/* End .container */}
           </TabPanel>
-          {/* Contact Content Ends */}
 
-          {/* Blog Content Starts */}
-          <TabPanel className="blog">
+          <TabPanel className="blog">  
             <div
               className="title-section text-left text-sm-center "
               data-aos="fade-up"
@@ -147,14 +131,11 @@ const Home = () => {
               data-aos="fade-up"
               data-aos-duration="1200"
             >
-              {/*  Articles Starts  */}
               <div className="row pb-50">
                 <Blog />
               </div>
-              {/* Articles Ends */}
-            </div>
+            </div> 
           </TabPanel>
-          {/* Blog Content Ends */}
         </div>
       </Tabs>
     </div>

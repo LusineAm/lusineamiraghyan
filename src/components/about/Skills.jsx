@@ -17,6 +17,7 @@ const skillsContent = [
 const Skills = () => {
   return (
     <>
+    <h1 style={{color: "red", textAlign: "center"}}>Think of something else for this section</h1>
       {skillsContent.map((val, i) => (
         <div className="col-6 col-md-3 mb-3 mb-sm-5" key={i}>
           <div className={`c100 ${val.skillClass}`}>
