@@ -26,8 +26,74 @@ const Portfolio = () => {
             <TabPanel>
               <div className="tab-container">
                 {PortfolioData.map((item) => {
-                  const { id, type, image, delayAnimation } = item;
+                  const { id, title, image, delayAnimation } = item;
 
+                  return (
+                    <div
+                      key={id}
+                      data-aos="fade-right"
+                      data-aos-delay={delayAnimation}
+                    >
+                      <div
+                        className="tab-content"
+                        onClick={() => handleModal(id)}
+                      >
+                        <img src={image} alt="portfolio project" />
+                        <h3>
+                          <span className="conent-title">
+                            <i
+                              class="fa fa-arrows-alt fa-2x"
+                              aria-hidden="true"
+                            ></i>
+                          </span>
+                        </h3>
+                      </div>
+                      <h2>{title}</h2>
+                    </div>
+                  );
+                })}
+              </div>
+            </TabPanel>
+
+            <TabPanel>
+              <div className="tab-container">
+                {PortfolioData.filter((item) => item.tag.includes("real")).map(
+                  (item) => {
+                    const { id, title, image, delayAnimation } = item;
+                    return (
+                      <div
+                        key={id}
+                        data-aos="fade-right"
+                        data-aos-delay={delayAnimation}
+                      >
+                        <div
+                          className="tab-content"
+                          onClick={() => handleModal(id)}
+                        >
+                          <img src={image} alt="project beigene" />
+                          <h3>
+                            <span className="conent-title">
+                              <i
+                                class="fa fa-arrows-alt fa-2x"
+                                aria-hidden="true"
+                              ></i>
+                            </span>
+                          </h3>
+                        </div>
+                        <h2>{title}</h2>
+                      </div>
+                    );
+                  }
+                )}
+              </div>
+            </TabPanel>
+
+            <TabPanel>
+              <div className="tab-container">
+                {PortfolioData.filter((item) =>
+                  item.tag.includes("practice")
+                ).map((item) => {
+                  const { id, title, image, delayAnimation } = item;
                   return (
                     <div
                       key={id}
@@ -40,69 +106,20 @@ const Portfolio = () => {
                       >
                         <img src={image} alt="portfolio project demo" />
                         <h3>
-                          <span className="conent-title">{type}</span>
+                          <span className="conent-title">
+                            <i
+                              class="fa fa-arrows-alt fa-2x"
+                              aria-hidden="true"
+                            ></i>
+                          </span>
                         </h3>
                       </div>
+                      <h2>{title}</h2>
                     </div>
                   );
                 })}
               </div>
             </TabPanel>
-
-            <TabPanel>
-              <div className="tab-container">
-                {PortfolioData.filter((item) => item.tag.includes("real")).map(
-                  (item) => {
-                    const { id, type, image, delayAnimation } = item;
-                    return (
-                      <div
-                        key={id}
-                        data-aos="fade-right"
-                        data-aos-delay={delayAnimation}
-                      >
-                        <div
-                          className="tab-content"
-                          onClick={() => handleModal(id)}
-                        >
-                          <img src={image} alt="portfolio project demo" />
-                          <h3>
-                            <span className="conent-title">{type}</span>
-                          </h3>
-                        </div>
-                        {/* {getModal && <Modal props={modalId} />} */}
-                      </div>
-                    );
-                  }
-                )}
-              </div>
-            </TabPanel>
-
-            <TabPanel>
-              <div className="tab-container">
-                {PortfolioData.filter((item) => item.tag.includes("practice")).map(
-                  (item) => {
-                    const { id, type, image, delayAnimation } = item;
-                    return (
-                      <div
-                        key={id}
-                        data-aos="fade-right"
-                        data-aos-delay={delayAnimation}
-                      >
-                        <div
-                          className="tab-content"
-                          onClick={() => handleModal(id)}
-                        >
-                          <img src={image} alt="portfolio project demo" />
-                          <h3>
-                            <span className="conent-title">{type}</span>
-                          </h3>
-                        </div>
-                      </div>
-                    );
-                  }
-                )}
-              </div>
-            </TabPanel>         
           </div>
         </Tabs>
       </div>

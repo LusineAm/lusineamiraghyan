@@ -143,7 +143,6 @@ body.light .about .box-stats {
   border: 1px solid #ddd;
 }
 
-body.light .about .c100,
 body.light .about .resume-box .time {
   background-color: #eee;
 }
@@ -159,14 +158,6 @@ body.light .about .resume-box .place:before {
 
 body.light .about .resume-box li:after {
   border-left: 1px solid #ddd;
-}
-
-body.light .about .c100 > span {
-  color: #666;
-}
-
-body.light .about .c100:after {
-  background-color: #fff;
 }
 
 body.light .portfolio .slideshow figure {
@@ -444,7 +435,7 @@ body.light .header ul.icon-menu li.icon-box:hover i {
   margin: 0 70% 0 0 auto;
   width: 100%;
   position: relative;
-  padding: 30px 0 ;
+  padding: 30px 0;
 }
 
 .title-section h1 {
@@ -486,7 +477,7 @@ body.light .header ul.icon-menu li.icon-box:hover i {
 }
 .header {
   position: fixed;
-  right: 30px;
+  right: 10px;
   z-index: 3;
   display: flex;
   align-items: center;
@@ -843,28 +834,17 @@ body.light .header ul.icon-menu li.icon-box:hover i {
 
 /* Skills */
 
-.about .c100 {
-  float: none !important;
-  margin: 0 auto;
-  background-color: #252525;
-}
-
-.about .c100 > span {
-  color: #fff;
-}
-
-.about .c100:after {
-  background-color: #111;
-}
-
 /*** Portfolio ***/
 .portfolio .main-content {
   padding-bottom: 60px;
   margin-top: -15px;
 }
 
-/* Grid */
+.skills {
+  margin: 0 auto;
+}
 
+/* Grid */
 .portfolio .grid-gallery ul {
   list-style: none;
   margin: 0 -15px;
@@ -1155,6 +1135,7 @@ body.light .contact .custom-span-contact a {
     width: 100%;
     padding: 12px 26px;
     height: 200px;
+    min-height: 100px;
     overflow: hidden;
     border-radius: 30px;
     outline: none !important;
@@ -1462,8 +1443,8 @@ body.light .contact .custom-span-contact a {
     border-radius: 3px;
     z-index: 1;
     transform-origin: 5px 0;
-    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-      opacity 0.55s ease;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+      background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
   }
 
   #menuToggle > span:first-child {
@@ -1712,10 +1693,6 @@ body.light .contact .custom-span-contact a {
     padding: 15px 20px 20px 25px;
   }
 
-  .about .c100 {
-    transform: scale(0.8);
-  }
-
   .about .box-stats.with-margin {
     margin-bottom: 25px;
   }
@@ -1896,8 +1873,7 @@ button:focus {
   max-width: 1200px;
 }
 .row > * {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 0 25px;
 }
 
 .pr-2 {
@@ -1914,62 +1890,7 @@ button:focus {
 .blog-post .meta i {
   color: var(--main-primary-color);
 }
-.box_inner.about {
-  .pie,
-  .c100 .bar,
-  .c100.p51 .fill,
-  .c100.p52 .fill,
-  .c100.p53 .fill,
-  .c100.p54 .fill,
-  .c100.p55 .fill,
-  .c100.p56 .fill,
-  .c100.p57 .fill,
-  .c100.p58 .fill,
-  .c100.p59 .fill,
-  .c100.p60 .fill,
-  .c100.p61 .fill,
-  .c100.p62 .fill,
-  .c100.p63 .fill,
-  .c100.p64 .fill,
-  .c100.p65 .fill,
-  .c100.p66 .fill,
-  .c100.p67 .fill,
-  .c100.p68 .fill,
-  .c100.p69 .fill,
-  .c100.p70 .fill,
-  .c100.p71 .fill,
-  .c100.p72 .fill,
-  .c100.p73 .fill,
-  .c100.p74 .fill,
-  .c100.p75 .fill,
-  .c100.p76 .fill,
-  .c100.p77 .fill,
-  .c100.p78 .fill,
-  .c100.p79 .fill,
-  .c100.p80 .fill,
-  .c100.p81 .fill,
-  .c100.p82 .fill,
-  .c100.p83 .fill,
-  .c100.p84 .fill,
-  .c100.p85 .fill,
-  .c100.p86 .fill,
-  .c100.p87 .fill,
-  .c100.p88 .fill,
-  .c100.p89 .fill,
-  .c100.p90 .fill,
-  .c100.p91 .fill,
-  .c100.p92 .fill,
-  .c100.p93 .fill,
-  .c100.p94 .fill,
-  .c100.p95 .fill,
-  .c100.p96 .fill,
-  .c100.p97 .fill,
-  .c100.p98 .fill,
-  .c100.p99 .fill,
-  .c100.p100 .fill {
-    border: 0.08em solid var(--main-primary-color);
-  }
-}
+
 .portfolio-tab-list {
   display: flex;
   align-items: center;

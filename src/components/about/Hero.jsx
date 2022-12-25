@@ -1,9 +1,6 @@
-import React, { useState } from "react";
-import Modal from "react-modal";
+import React from "react";
 import heroImg from "../../assets/img/hero/dark.jpg";
 import heroImgMobile from "../../assets/img/hero/img-mobile.jpg";
-import cancelImg from "../../assets/img/cancel.svg";
-import Index from "../../components/about/index";
 
 const heroContent = {
   heroImage: heroImg,
@@ -14,15 +11,9 @@ const heroContent = {
   crafting clean & user‑friendly experiences, I am passionate about
   building excellent software that improves the lives of those
   around me.`,
-  heroBtn: "more about me",
 };
 
 const Hero = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  function toggleModalOne() {
-    setIsOpen(!isOpen);
-  }
-
   return (
     <>
       <div className="row home-details-container align-items-center">
@@ -50,32 +41,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <Modal
-        isOpen={isOpen}
-        onRequestClose={toggleModalOne}
-        contentLabel="My dialog"
-        className="custom-modal dark hero"
-        overlayClassName="custom-overlay dark"
-        closeTimeoutMS={500}
-      >
-        <div>
-          <button className="close-modal" onClick={toggleModalOne}>
-            <img src={cancelImg} alt="close icon" />
-          </button>
-
-          <div className="box_inner about">
-            <div data-aos="fade-up" data-aos-duration="1200">
-              <div className="title-section text-left text-sm-center">
-                <h1>
-                  ABOUT <span>ME</span>
-                </h1>
-                <span className="title-bg">Resume</span>
-              </div>
-              <Index />
-            </div>
-          </div>
-        </div>
-      </Modal>
     </>
   );
 };

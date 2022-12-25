@@ -1,16 +1,11 @@
 import { useState } from "react";
-import img1 from "../assets/img/blog/blog-post-1.jpg";
-import img2 from "../assets/img/blog/blog-post-2.jpg";
-import img3 from "../assets/img/blog/blog-post-3.jpg";
-import img4 from "../assets/img/blog/blog-post-4.jpg";
-import img5 from "../assets/img/blog/blog-post-5.jpg";
-import img6 from "../assets/img/blog/blog-post-6.jpg";
+import img from "../assets/img/blog/blog-post-1.jpg";
 
 const AllBlogData = () => {
   const blogsData = [
     {
       id: 1,
-      img: img1,
+      img: img,
       title: "How to Own Your Audience by Creating an Email List",
       commentor: "Rio ",
       date: "21 April 2022",
@@ -26,7 +21,7 @@ const AllBlogData = () => {
     },
     {
       id: 2,
-      img: img2,
+      img: img,
       title: "Top 10 Toolkits for Deep Learning in 2022",
       commentor: "Santhan ",
       date: "14 January 2022",
@@ -42,7 +37,7 @@ const AllBlogData = () => {
     },
     {
       id: 3,
-      img: img3,
+      img: img,
       title: "Everything You Need to Know About Web Accessibility",
       commentor: "steve ",
       date: "9 January 2020",
@@ -58,7 +53,7 @@ const AllBlogData = () => {
     },
     {
       id: 4,
-      img: img4,
+      img: img,
       title: "How to Inject Humor & Comedy Into Your Brand",
       commentor: "Beker ",
       date: "15 March 2022",
@@ -74,7 +69,7 @@ const AllBlogData = () => {
     },
     {
       id: 5,
-      img: img5,
+      img: img,
       title: "Women in Web Design: How To Achieve Success",
       commentor: "Janntul ",
       date: "9 January 2021",
@@ -90,7 +85,7 @@ const AllBlogData = () => {
     },
     {
       id: 6,
-      img: img6,
+      img: img,
       title: "Evergreen versus topical content: An overview",
       commentor: "Hasan ",
       date: "9 January 2022",

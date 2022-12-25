@@ -8,8 +8,6 @@ const Address = () => {
         <span className="d-block">Address Point</span> Tigran Mets Ave 24,
         Yerevan, Republic Of Armenia.
       </p>
-      {/* End .custom-span-contact */}
-
       <p className="open-sans-font custom-span-contact position-relative">
         <i className="fa fa-envelope-open position-absolute"></i>
         <span className="d-block">mail me</span>{" "}
@@ -17,14 +15,11 @@ const Address = () => {
           lusine.a.amiraghyan@gmail.com
         </a>
       </p>
-      {/* End .custom-span-contact */}
-
       <p className="open-sans-font custom-span-contact position-relative">
         <i className="fa fa-phone-square position-absolute"></i>
         <span className="d-block">call me</span>{" "}
         <a href="Tel: +374 77 53 72 53">+374 77 537253</a>
-      </p>
-      {/* End .custom-span-contact */}
+      </p>{" "}
     </>
   );
 };

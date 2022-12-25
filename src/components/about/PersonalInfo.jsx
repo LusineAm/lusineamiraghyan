@@ -2,7 +2,6 @@ import React from "react";
 
 const personalInfoContent = [
   { meta: "full name", metaInfo: "Lusine Amiraghyan" },
-  // { meta: "last name", metaInfo: "Amiraghyan" },
   { meta: "Age", metaInfo: "26 Years" },
   { meta: "Nationality", metaInfo: "Armenian" },
   { meta: "Address", metaInfo: "Yerevan, Tigran Mets ave" },

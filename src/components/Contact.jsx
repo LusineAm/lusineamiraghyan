@@ -51,8 +51,6 @@ const Contact = () => {
               <input type="text" name="name" placeholder="YOUR NAME" required />
             </div>
           </div>
-          {/* End .col */}
-
           <div className="col-12 col-md-6">
             <div className="form-group">
               <input
@@ -63,8 +61,6 @@ const Contact = () => {
               />
             </div>
           </div>
-          {/* End .col */}
-
           <div className="col-12 col-md-12">
             <div className="form-group">
               <input
@@ -75,8 +71,6 @@ const Contact = () => {
               />
             </div>
           </div>
-          {/* End .col */}
-
           <div className="col-12">
             <div className="form-group">
               <textarea
@@ -86,15 +80,12 @@ const Contact = () => {
               ></textarea>
             </div>
           </div>
-          {/* End .col */}
-
           <div className="col-12">
             <button type="submit" className="button">
               <span className="button-text">Send Message</span>
               <span className="button-icon fa fa-send"></span>
             </button>
           </div>
-          {/* End .col */}
         </div>
       </form>
     </>

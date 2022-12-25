@@ -1,21 +1,21 @@
-// import React from "react";
-// import Modal from "react-modal";
-// import cancelImg from "../../assets/img/cancel.svg";
-// import UseData from "../../Hooks/UseData";
-// import blogQuote from "../../assets/img/blog/quote.svg";
+import React from "react";
+import Modal from "react-modal";
+import cancelImg from "../../assets/img/cancel.svg";
+import UseData from "../../Hooks/UseData";
+import blogQuote from "../../assets/img/blog/quote.svg";
 
-// Modal.setAppElement("#root");
+Modal.setAppElement("#root");
 
 const Blog = () => {
-//   const { singleData, isOpen, setIsOpen, blogsData, handleBlogsData } =
-//     UseData();
-//   const handleModle = (id) => {
-//     handleBlogsData(id);
-//   };
+  const { singleData, isOpen, setIsOpen, blogsData, handleBlogsData } =
+    UseData();
+  const handleModle = (id) => {
+    handleBlogsData(id);
+  };
   return (
     <>
-    <h3 style={{textAlign: "center", color: "red"}}>Maybe Later :)</h3>
-      {/* <div className="row">
+      <h3 style={{ textAlign: "center", color: "red" }}>Maybe Later :)</h3>
+      <div className="row">
         {blogsData.map((item) => (
           <div
             key={item.id}
@@ -100,7 +100,7 @@ const Blog = () => {
             </Modal>
           </div>
         ))}
-      </div> */}
+      </div>
     </>
   );
 };

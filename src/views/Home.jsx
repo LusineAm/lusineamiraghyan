@@ -1,6 +1,5 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import Hero from "../components/hero/Hero";
 import Index from "../components/about/index";
 import Address from "../components/Address";
 import Portfolio from "../components/portfolio/Portfolio";
@@ -35,27 +34,6 @@ const Home = () => {
         </div>
         <div className="tab-panel_list">
           <TabPanel className="home ">
-            <div>
-              <div data-aos="fade-up" data-aos-duration="1200">
-                <div className="title-section text-left text-sm-center">
-                  <h1>
-                    WHAT ABOUT <span>ME ?</span>
-                  </h1>
-                  <span className="title-bg">Resume</span>
-                </div>
-              </div>
-            </div>
-            <div
-              className="container-fluid main-container container-home p-0 "
-              data-aos="fade-up"
-              data-aos-duration="1200"
-            >
-              <div className="color-block d-none d-lg-block"></div>
-              <Hero />
-            </div>
-            
-            <hr className="separator mt-5 mb-5" />
-
             <div className="about">
               <div data-aos="fade-up" data-aos-duration="1200">
                 <Index />
@@ -115,7 +93,7 @@ const Home = () => {
             </div>
           </TabPanel>
 
-          <TabPanel className="blog">  
+          <TabPanel className="blog">
             <div
               className="title-section text-left text-sm-center "
               data-aos="fade-up"
@@ -134,7 +112,7 @@ const Home = () => {
               <div className="row pb-50">
                 <Blog />
               </div>
-            </div> 
+            </div>
           </TabPanel>
         </div>
       </Tabs>
