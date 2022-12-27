@@ -55,7 +55,7 @@ const PortfolioData = [
         preview: "www.professionals.am",
         link: "https://www.professionals.am",
         description:
-          "Tomfoolery crikey bits and bobs brilliant bamboozled down the pub amongst brolly hanky panky, cack bonnet arse over tit burke bugger all mate bodge. cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Suspendisse interdum consectetur libero id faucibu nisl. Lacus vel facilisis volutpat est velit egestas.",
+          "App is a portal designed for applicants and hiring companies. Applicants are provided with an opportunity to build their CV-s and have a look at them in real-time, apply for jobs, be notified about application status, view statistics, have an interview calendar, etc. The portal enables hiring companies to place their announcements both manually or automatically in case of API activation. All the necessary tools are there to help companies organize the hiring process smoothly.",
       },
     ],
   },
