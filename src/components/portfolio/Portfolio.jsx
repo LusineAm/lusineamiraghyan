@@ -27,7 +27,7 @@ const Portfolio = () => {
               <div className="tab-container">
                 {PortfolioData.map((item) => {
                   const { id, title, image, delayAnimation } = item;
-
+                  const img = image[0];
                   return (
                     <div
                       key={id}
@@ -38,7 +38,7 @@ const Portfolio = () => {
                         className="tab-content"
                         onClick={() => handleModal(id)}
                       >
-                        <img src={image} alt="portfolio project" />
+                        <img src={img} alt="portfolio project" />
                         <h3>
                           <span className="conent-title">
                             <i
@@ -104,7 +104,7 @@ const Portfolio = () => {
                         className="tab-content"
                         onClick={() => handleModal(id)}
                       >
-                        <img src={image} alt="portfolio project demo" />
+                        <img src={image[0]} alt="portfolio project" />
                         <h3>
                           <span className="conent-title">
                             <i

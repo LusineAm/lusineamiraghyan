@@ -1,6 +1,4 @@
 import React from "react";
-import img1 from "../../../assets/img/portfolio/beigene-logo.jpeg";
-import img2 from "../../../assets/img/portfolio/beigene-logo.jpeg";
 import CloseImg from "../../../assets/img/cancel.svg";
 import PortfolioData from "../portfolioData";
 import Slider from "react-slick";
@@ -9,7 +7,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 const Modal = ({ modalId, setGetModal }) => {
   var settings = {
-    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -75,29 +72,20 @@ const Modal = ({ modalId, setGetModal }) => {
               </div>
               <figure className="modal__img">
                 <Slider {...settings}>
-                  <div>
-                    <img src={item.image} alt="portfolio project demo" />
-                  </div>
-                  <div>
-                    <img src={img1} alt="portfolio project demo" />
-                  </div>
-                  <div>
-                    <img src={img2} alt="portfolio project demo" />
-                  </div>
-                  <div>
-                    <img src={img2} alt="portfolio project demo" />
-                  </div>
-                  <div>
-                    <img src={img2} alt="portfolio project demo" />
-                  </div>
+                  {item.image.map((img, i) => {
+                    return (
+                      <div key={i}>
+                        <img key={i} src={img} alt="portfolio project" />
+                      </div>
+                    );
+                  })}
                 </Slider>
               </figure>
-
               <button
                 className="close-modal"
                 onClick={() => setGetModal(false)}
               >
-                <img src={CloseImg} alt="portfolio project demo" />
+                <img src={CloseImg} alt="portfolio project" />
               </button>
             </div>
           );
