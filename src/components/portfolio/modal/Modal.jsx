@@ -50,14 +50,18 @@ const Modal = ({ modalId, setGetModal }) => {
                       <div className="col-12 col-sm-6 mb-2">
                         <i className="fa fa-external-link pr-2"></i>
                         Preview :{" "}
-                        <a
-                          className="preview-link"
-                          target="_blank"
-                          rel="noopener noreferrer nofollow"
-                          href={details.link}
-                        >
-                          {details.preview}
-                        </a>
+                        {details.link.length ? (
+                          <a
+                            className="preview-link"
+                            target="_blank"
+                            rel="noopener noreferrer nofollow"
+                            href={details.link}
+                          >
+                            {details.preview}
+                          </a>
+                        ) : (
+                          details.preview
+                        )}
                       </div>
                       <div className="col-12 col-sm-12 mb-2 ">
                         <i className="fa fa-info pr-2"></i>

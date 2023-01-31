@@ -6,7 +6,7 @@ const personalInfoContent = [
   { meta: "Nationality", metaInfo: "Armenian" },
   { meta: "Address", metaInfo: "Yerevan, Tigran Mets ave" },
   { meta: "Freelance", metaInfo: "Available" },
-  { meta: "Email", metaInfo: "lusine.a.amiraghyan@gmail.com" },
+  { meta: "Email", metaInfo: "lusineam.dev@gmail.com" },
   { meta: "phone", metaInfo: "+374 77 53 72 53" },
   { meta: "langages", metaInfo: "English, Russian, Armenian" },
 ];

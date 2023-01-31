@@ -3,7 +3,7 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import Index from "../components/about/index";
 import Address from "../components/Address";
 import Portfolio from "../components/portfolio/Portfolio";
-import Blog from "../components/blog/Blog";
+// import Blog from "../components/blog/Blog";
 import Contact from "../components/Contact";
 import Social from "../components/Social";
 import SwitchDark from "../components/switch/SwitchDark";
@@ -12,7 +12,7 @@ const menuItem = [
   { icon: "fa-home", menuName: "Home" },
   { icon: "fa-briefcase", menuName: "Portfolio" },
   { icon: "fa-envelope-open", menuName: "Contact" },
-  { icon: "fa-comments", menuName: "Blog" },
+  // { icon: "fa-comments", menuName: "Blog" },
 ];
 
 const Home = () => {
@@ -73,8 +73,8 @@ const Home = () => {
             >
               <div className="row">
                 <div className="col-12 col-lg-4">
-                  <h3 className="text-uppercase custom-title mb-0 ft-wt-600 pb-3">
-                    Don't be shy !
+                  <h3 className="custom-title mb-0 ft-wt-600 pb-3">
+                    Suggestion or Questions?
                   </h3>
                   <p className="open-sans-font mb-4">
                     Feel free to get in touch with me. I am always open to
@@ -93,7 +93,7 @@ const Home = () => {
             </div>
           </TabPanel>
 
-          <TabPanel className="blog">
+          {/* <TabPanel className="blog"> 
             <div
               className="title-section text-left text-sm-center "
               data-aos="fade-up"
@@ -113,7 +113,7 @@ const Home = () => {
                 <Blog />
               </div>
             </div>
-          </TabPanel>
+          </TabPanel> */}
         </div>
       </Tabs>
     </div>

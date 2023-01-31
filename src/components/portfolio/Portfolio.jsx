@@ -42,7 +42,7 @@ const Portfolio = () => {
                         <h3>
                           <span className="conent-title">
                             <i
-                              class="fa fa-arrows-alt fa-2x"
+                              className="fa fa-arrows-alt fa-2x"
                               aria-hidden="true"
                             ></i>
                           </span>
@@ -60,6 +60,7 @@ const Portfolio = () => {
                 {PortfolioData.filter((item) => item.tag.includes("real")).map(
                   (item) => {
                     const { id, title, image, delayAnimation } = item;
+                    const img = image[0];
                     return (
                       <div
                         key={id}
@@ -70,11 +71,11 @@ const Portfolio = () => {
                           className="tab-content"
                           onClick={() => handleModal(id)}
                         >
-                          <img src={image} alt="project beigene" />
+                          <img src={img} alt="project beigene" />
                           <h3>
                             <span className="conent-title">
                               <i
-                                class="fa fa-arrows-alt fa-2x"
+                                className="fa fa-arrows-alt fa-2x"
                                 aria-hidden="true"
                               ></i>
                             </span>
@@ -94,6 +95,7 @@ const Portfolio = () => {
                   item.tag.includes("practice")
                 ).map((item) => {
                   const { id, title, image, delayAnimation } = item;
+                  const img = image[0];
                   return (
                     <div
                       key={id}
@@ -104,11 +106,11 @@ const Portfolio = () => {
                         className="tab-content"
                         onClick={() => handleModal(id)}
                       >
-                        <img src={image[0]} alt="portfolio project" />
+                        <img src={img} alt="portfolio project" />
                         <h3>
                           <span className="conent-title">
                             <i
-                              class="fa fa-arrows-alt fa-2x"
+                              className="fa fa-arrows-alt fa-2x"
                               aria-hidden="true"
                             ></i>
                           </span>
