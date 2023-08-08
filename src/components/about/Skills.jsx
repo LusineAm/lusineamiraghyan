@@ -2,21 +2,17 @@ import React from "react";
 import ProgressBar from "@ramonak/react-progress-bar";
 
 const skillsContent = [
-  { skillPercent: "90", skillName: "HTML" },
-  { skillPercent: "70", skillName: "CSS" },
+  { skillPercent: "80", skillName: "HTML/CSS" },
   { skillPercent: "80", skillName: "JAVASCRIPT" },
-  { skillPercent: "80", skillName: "TYPESCRIPT" },
+  { skillPercent: "70", skillName: "TYPESCRIPT" },
   { skillPercent: "70", skillName: "REACT JS" },
   { skillPercent: "50", skillName: "NODE JS" },
   { skillPercent: "40", skillName: "PHP" },
-  { skillPercent: "50", skillName: "WORDPRESS" },
-  { skillPercent: "50", skillName: "JQUERY" },
-  { skillPercent: "70", skillName: "POSTGRESQL" },
-  { skillPercent: "70", skillName: "MSSQL" },
-  { skillPercent: "50", skillName: "MYSQL" },
-  { skillPercent: "90", skillName: "Git" },
-  { skillPercent: "90", skillName: "GitHub" },
-  { skillPercent: "90", skillName: "BitBucket" },
+  { skillPercent: "50", skillName: "WORDPRESS/JQUERY" },
+  { skillPercent: "50", skillName: "POSTGRESQL/MSSQL" },
+  { skillPercent: "50", skillName: "NPM/YARN" },
+  { skillPercent: "70", skillName: "Git" },
+  { skillPercent: "70", skillName: "GitHub/BitBucket" },
 ];
 
 const Skills = () => {

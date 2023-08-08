@@ -5,17 +5,19 @@ import imgMobile from "../../assets/img/hero/lusineam-mob.jpg";
 const content = {
   image: img,
   mobileImage: imgMobile,
-  titleName: "Lusine Amiraghyan",
-  designation: "Full-Stack Developer",
+  titleName: "Hello, I'm Lusine",
+  designation: "And I'm Front-End Developer",
   longDescription: `
-      I'm a Full-Stack developer, oriented in React JS and Node JS technologies.
-      I like learning new and better ways to create seamless user experiences
-      with clean, efficient, and scalable code. I am passionate about building
-      excellent software that improves the lives of those around me.
+  Welcome to my webpage! I'm a highly motivated Front-end developer. I am enthusiastic about 
+  creating elegant and intuitive user experiences through clean, efficient, and scalable code.
+  My passion lies in building software that not only meets user needs but also enhances their 
+  lives. Learning new tools and techniques excites me, and I believe it is vital to keep 
+  evolving in this ever-changing field. I approach every challenge as an opportunity to learn 
+  and grow. I enjoy tackling complex problems, breaking them down, and finding innovative solutions.
    `,
   shortDescription: `
-  I started my career as a Front-end, and continued as a Full-stack developer.
-  I consider offers as a Front-End or Full-Stack developer. Also i open for a freelance work.
+  I started my career as a Front-end, and continued as a Full-stack developer. 
+  I consider offers as a Front-End developer. Also I open for a freelance work.
     `,
 };
 
@@ -37,7 +39,8 @@ const Hero = () => {
               alt="it's me"
             />
             <h1 className="text-uppercase poppins-font">
-              I'm {content.titleName}.<span>{content.designation}</span>
+              {content.titleName}
+              <span>{content.designation}</span>
             </h1>
             <p className="open-sans-font">{content.longDescription}</p>
             <p className="open-sans-font">{content.shortDescription}</p>

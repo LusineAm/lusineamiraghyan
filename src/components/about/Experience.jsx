@@ -2,19 +2,19 @@ import React from "react";
 
 const experienceContent = [
   {
-    year: "2022 Sep - Present",
-    position: "Full-Stack Web Developer",
-    compnayName: "INSCOPE LLS",
-    details: `Java Script Full-Steck Web Developer`,
+    year: "2021 Sep - 2023 March",
+    position: "Full-Stack Developer",
+    compnayName: "INSCOPE LLC",
+    details: `Java Script Full-Steck Developer`,
   },
   {
     year: "2021 Jul- 2021 Sep",
-    position: "Intern Web Developer",
-    compnayName: "INSCOPE LLS",
-    details: `Java Script Full-Steck Web Developer Intern`,
+    position: "ReactJS Intern",
+    compnayName: "INSCOPE LLC",
+    details: `ReactJS Developer Intern`,
   },
   {
-    year: "2016 Sep - 2018 Dec",
+    year: "2016 Sep - 2019 Dec",
     position: "Cashear",
     compnayName: "Fast Credit Capital UCO",
     details: ``,

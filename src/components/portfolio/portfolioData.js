@@ -38,7 +38,7 @@ const PortfolioData = [
         project: "Website",
         client: "BeiGene",
         language: "JavaScript, ReactJS, NodeJs, MsSQL",
-        preview: "Local Progect",
+        preview: "Local Progjct",
         link: "",
         description:
           "This application was created by order of the international campaign Beigene Pharmaceutical company. The application is local, it's available only to specialists in the relevant sections of the company, to analyze data using graphs and charts, and  to easy work with huge dates. Also company uses application for cordinaiting and showing results of work using finely crafted filters. ",

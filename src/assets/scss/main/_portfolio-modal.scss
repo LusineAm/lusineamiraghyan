@@ -100,6 +100,7 @@ $mbl-small: 23.75em; //380px / 16px = 23.75em
   }
   @media (max-width: 576px) {
     .slick-prev {
+      z-index: 2;
       left: -40px;
     }
     .slick-next {
